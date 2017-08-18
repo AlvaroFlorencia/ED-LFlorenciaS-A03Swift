@@ -105,7 +105,10 @@ return vector            //Se devuelve el vector
 }
 }
 
-
+protocol ordenamiento //Protocolo como interfaz en Java
+{
+	 func seleccion (vector : [Int]) -> [Int]  //
+}
 
 class secuencial: Busquedas
 {
@@ -122,10 +125,7 @@ class secuencial: Busquedas
         return -1
    }
 }
-protocol ordenamiento //Protocolo como interfaz en Java
-{
-	 func seleccion (vector : [Int]) -> [Int]  //
-}
+
 //Main
 
 
