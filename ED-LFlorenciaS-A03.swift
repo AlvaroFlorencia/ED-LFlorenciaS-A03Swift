@@ -8,7 +8,7 @@ func CrearVector(tamaño:Int)->[Int]
     var vector:[Int] = [Int]()
     for _ in 0...(tamaño-1)  //se corre el for y se va llenando  el array con datos random ,el %100 es para que aparezcan números enteros
 {
-    vector.append(random() % 100)
+    vector.append(random() % 100) //random para la plataforma de IBM
         }
         return vector
         }
