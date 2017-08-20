@@ -20,14 +20,14 @@ return self.vector
     func MostrarVector() 
     {
     let valor:Int = self.vector.count-1 //-1 para evitar un excepción
-    var string = "Valores del array:"   
+    var imprimir = "Valores del array:"   
     for(valor) in 0...valor
 {
-    string+=String(self.vector[valor])
-	string+=" , "//Se recorre el for y se va imprimiendo
+    imprimir+=String(self.vector[valor])
+	imprimir+=" , "//Se recorre el for y se va imprimiendo
     
     }
-    print(string)
+    print(imprimir)
     }
 
    func setVector(vector:[Int])  //Setter
@@ -128,7 +128,6 @@ class secuencial: Busquedas
 
 //Main
 
-
 var secuential: secuencial = secuencial()
 secuential.setVector(vector: secuential.CrearVector(tamaño: 50))
 secuential.MostrarVector()
@@ -136,7 +135,5 @@ secuential.MostrarF(valor: secuential.busqueda(valor: 77))
 var vector1: [Int] = [6,8,9,14,11,78,21,42,45]
 var binario: binaria = binaria()
 binario.setVector(vector: vector1)
+binario.MostrarF(valor: binario.busqueda(valor:6))
 binario.MostrarVector()
-binario.MostrarF(valor: binario.busqueda(valor:14))
-
-
