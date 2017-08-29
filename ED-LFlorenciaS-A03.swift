@@ -123,18 +123,18 @@ intercambio(p1:j+1,p2:j)
   }
 self.vector = vector
 }
-func quickSort(inicio:Int, fin:Int) 
+func quickSort(inicio:Int, termino:Int) 
 {
 var vector : [Int] = self.vector
 var i: Int = inicio
-var j: Int = fin
-let pivot = vector[inicio]
+var j: Int = termino
+let pivote = vector[inicio]
 while(i<=j)
 {
-while(vector[i]<=pivot && i<j)
+while(vector[i]<=pivote && i<j)
 	{
 		i=i+1
-}	while(vector[j]>pivot)
+}	while(vector[j]>pivote)
 {
 	j=j-1
 }
@@ -146,14 +146,14 @@ j=j-1
 	}
 }
 vector[inicio] = vector [j]
-vector [j] = pivot
+vector [j] = pivote
 if(inicio<j-1)
 {
-quickSort(inicio:inicio, fin:j-1)
+quickSort(inicio:inicio, termino:j-1)
 }
 if(i<fin)
 {
-quickSort(inicio:j+1, fin:fin)
+quickSort(inicio:j+1, termino:termino)
 }
 self.vector = vector
 }
@@ -245,7 +245,7 @@ return vector            //Se devuelve el vector
 protocol ordenamiento //Protocolo como interfaz en Java
 {
 	 func seleccion (vector : [Int]) -> [Int]
-	func burbuja
+	func burbuja()
 	func inserccion()
 	func mergeSort(inicio:Int, fin:Int)
 	func quickSort(inicio:Int, fin:Int)//
