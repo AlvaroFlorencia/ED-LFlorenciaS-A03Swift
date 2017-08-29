@@ -247,8 +247,8 @@ protocol ordenamiento //Protocolo como interfaz en Java
 	 func seleccion (vector : [Int]) -> [Int]
 	func burbuja()
 	func inserccion()
-	func mergeSort(inicio:Int, fin:Int)
-	func quickSort(inicio:Int, fin:Int)//
+	func mergeSort(inicio:Int, termino:Int)
+	func quickSort(inicio:Int, termino:Int)//
 }
 
 class secuencial: Busquedas
